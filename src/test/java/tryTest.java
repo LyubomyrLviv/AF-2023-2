@@ -29,7 +29,7 @@ public class tryTest extends BasePage{
         Thread.sleep(3000);
         String productNameBasket = basketPage.getBasketPopProductName();
         System.out.println(productNameBasket);
-
+        System.out.println("just a simple text to check git");
         Assert.assertEquals(productNamePL, productNameBasket);
 
 
