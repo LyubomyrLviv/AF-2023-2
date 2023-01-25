@@ -1,14 +1,14 @@
 package pageObjects;
 
 
-import basePage.BasePage;
+import pageObjects.basePage.BasePage;
 import org.openqa.selenium.By;
 import reusable.commonActions.Actions;
 
 
 public class ProductDetails extends BasePage {
 
-    By buyBtb = By.xpath("//li[@class='product-buttons__item ng-star-inserted']");
+    By buyBtb = By.xpath("//li[@class='product-buttons__item ng-star-inserted'][1]");
     By productName = By.xpath("//div[@class='product__heading']");
 
     public void pressOnBuyBtn()

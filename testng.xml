@@ -6,7 +6,7 @@
     </listeners>
     <test verbose="2" preserve-order="true" name="D:/Java/TestProjects/AF2023">
         <classes>
-            <class name="tryTest"></class>
+            <class name="AddToCartAndCheck"></class>
         </classes>
     </test>
 </suite>

@@ -1,6 +1,6 @@
 package pageObjects;
 
-import basePage.BasePage;
+import pageObjects.basePage.BasePage;
 import org.openqa.selenium.By;
 import reusable.commonActions.Actions;
 
@@ -11,7 +11,7 @@ public class BasketPage extends BasePage
 
     public String getBasketPopProductName()
     {
-        return Actions.getTest(driver, popProductName);
+        return Actions.getText(popProductName);
     }
 
 }

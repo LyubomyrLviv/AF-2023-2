@@ -1,28 +1,26 @@
 package reusable.commonActions;
 
-import basePage.BasePage;
+import pageObjects.basePage.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
+
+
 import java.util.List;
 
 
 public class Actions extends BasePage {
 
 
-    public static void click
-            (WebDriver driver, By element)
+    public static void click (WebDriver driver, By element)
     {
         driver.findElement(element).click();
     }
 
 
-    public static String getTest
-            (WebDriver driver, By element)
+    public static String getText (By element)
     {
         return driver.findElement(element).getText();
     }
@@ -36,6 +34,11 @@ public class Actions extends BasePage {
             throw new Exception("Value is not present in the dropdown" + valueToBeSelected + "for the ele,ent ->" + element);
         }
 
+    }
+
+    public static List<WebElement> getAllElements(By element)
+    {
+        return driver.findElements(element);
     }
 
 

@@ -1,0 +1,36 @@
+package entities;
+
+public class Product {
+
+    String name;
+    int price;
+
+    public Product(String name, String price) {
+        this.name = name;
+        this.price = Integer.parseInt(price.replaceAll("\\s",""));
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                '}';
+    }
+}

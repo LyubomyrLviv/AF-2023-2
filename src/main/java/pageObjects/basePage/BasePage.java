@@ -1,11 +1,12 @@
-package basePage;
+package pageObjects.basePage;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import reusable.PropertiesOperations;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+
 import reusable.ObjectsRepo;
 
 import java.io.IOException;
